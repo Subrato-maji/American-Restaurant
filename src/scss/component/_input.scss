@@ -1,0 +1,31 @@
+
+
+.form{
+   &-group{
+       margin-bottom: 1rem;
+   }
+    &-input{
+        border-color:  hsl( var(--color-hsl-dark) / 0.2) ;
+        border-radius: 5px;
+        &::placeholder{
+            color: hsl( var(--color-hsl-dark) / 0.7) ;
+            font-size: 0.97rem;
+            font-weight: var(--weight-500);
+        }
+        &:focus{
+            box-shadow: none !important;
+         
+        }
+        
+    }
+    &-checkbox{
+        min-width: 1rem;
+        margin-right: .5rem;
+    }
+    &-info{
+        & > * {
+            margin-bottom: 1rem;
+        }
+    }
+
+} 

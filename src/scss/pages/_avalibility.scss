@@ -1,0 +1,12 @@
+@use "../utility/reuseble"as *;
+@use "../utility"as *;
+
+.avalible{
+    & .main-heading{
+        margin-bottom: 3.5rem;
+    }
+    &-time{
+
+        margin-bottom: 3.57rem;
+    }
+}

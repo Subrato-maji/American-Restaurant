@@ -1,0 +1,18 @@
+@use  "mixin" as *;
+.prefield {
+  
+        &-card {
+            background-color: var(--color-white);
+            padding: 1.875rem; //30px
+            max-width: 859px;
+            margin: 3.85rem 0;
+
+            @include mediaMin(md) {
+                padding: 3.75rem;
+            }
+
+        
+    }
+
+
+}

@@ -1,0 +1,27 @@
+@use "mixin"as *;
+@use "../utility/variable"as *;
+@use "../utility/maps" as *;
+
+:root {
+ --font-family: "SF Pro Display";
+
+  // colors
+  @each $var,
+  $val in $color {
+    --color-#{$var}: #{$val};
+
+  }
+
+  // weights
+  @each $var,
+  $val in $weight {
+    --weight-#{$var}: #{$val};
+
+  }
+
+  // font-size
+  --font-h1:3rem;
+  --font-h2:2rem;
+  --font-label: 0.875rem;
+
+}

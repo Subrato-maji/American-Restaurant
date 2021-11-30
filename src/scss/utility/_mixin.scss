@@ -1,0 +1,48 @@
+@use "breakpoint" as *;
+@use "function" as *;
+
+// Makes the @content apply to the given breakpoint and wider.
+// $name : map-key   $mapBreakpoints: full map data
+
+// Media of at least the minimum breakpoint width.
+// Ex: @include mediaMin(sm) { Addition content adding for }
+@mixin mediaMin($name, $mapBreakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($name, $mapBreakpoints);
+  @if $min {
+    @media (min-width: $min + "em") {
+      @content; //additional content adding for
+    }
+  } @else {
+    @error 'Not find key in Map ' $name;
+  }
+}
+
+// Media of at least the Maximum breakpoint width.
+// Ex: @include mediaMax(sm) { Addition content adding for }
+@mixin mediaMax($name, $mapBreakpoints: $grid-breakpoints) {
+  $max: breakpoint-max($name, $mapBreakpoints);
+  @if $max {
+    @media (max-width: $max +"em") {
+      @content; //additional content adding for
+    }
+  } @else {
+    @error 'Not find key in Map ' $name;
+  }
+}
+
+// Media of at least the Minmum & Maximum breakpoint width.
+// Ex: @include mediabetween(sm,md) first min, second max{ Addition content adding for }
+@mixin mediaBetween($lower, $upper, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($lower, $breakpoints);
+  $max: breakpoint-max($upper, $breakpoints);
+
+  @if $min != null and $max != null {
+    @media (min-width: $min+"em") and (max-width: $max + "em") {
+      @content;
+    }
+  }
+  @else{
+    @error "use proper breakpoint thanks" $lower  $upper;
+  }
+}
+

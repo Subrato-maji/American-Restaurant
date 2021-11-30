@@ -1,0 +1,57 @@
+@use "../utility"as *;
+@use "../utility/reuseble"as *;
+
+// button
+
+
+.btn {
+    padding: .9375rem 1.25rem;
+    font-size: 1.1258rem;
+    border-radius: .3125rem;
+
+    &-white {
+        color: var(--color-dark);
+        background-color: var(--color-white);
+        box-shadow: 0px 12px 38px var(--color-box-shadow);
+    }
+&-outline{
+    border: 3px solid var(--color-orange);
+    background-color: var(--color-white-2);
+}
+    &-orange {
+        color: var(--color-white);
+        background-color: var(--color-orange);
+        box-shadow: 0px 12px 38px var(--color-box-shadow);
+        font-weight: var(--weight-700) !important;
+        @extend %background-orange;
+
+
+        &:hover,
+        &:focus {
+            color: var(--color-white) !important;
+        }
+    }
+
+    &-form-action {
+        margin-bottom: 1.5rem;
+        font-weight: var(--weight-700);
+
+    }
+
+    &-google {
+        margin: 1.25rem 0;
+        font-weight: var(--weight-600);
+
+        & .google-icon {
+            display: inline-block;
+            width: 1.25rem;
+            margin-right: 1rem;
+        }
+    }
+    &-signup{
+        width: 100%;
+        @include mediaMin(md){
+            width: 50%;
+        }
+    }
+}

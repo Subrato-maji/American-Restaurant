@@ -1,0 +1,50 @@
+@use "../utility/reuseble"as *;
+@use "../utility"as *;
+
+.reserve {
+    &-links {
+        font-size: .875rem;
+        font-weight: var(--weight-600);
+        @extend %text-orange;
+
+        &:hover {
+            color: var(--color-orange);
+
+
+        }
+        &-edit{
+            text-decoration: underline;
+            font-weight: var(--weight-500);
+            margin-top: 1.375rem;
+        }
+    }
+
+    & .main-heading {
+        margin: 0;
+    }
+
+    & .info {
+        margin-bottom: .875rem;
+    }
+
+    &-details {
+        margin-top: 1.9375rem;
+    }
+
+    &-title {
+        margin-top: .8125rem; //13px
+    }
+
+    &-email {
+        margin: 0.5rem 0 0.812rem 0;
+    }
+
+    
+      
+
+    .text {
+        &-group {
+            margin: 1.562rem 0;
+        }
+    }
+}

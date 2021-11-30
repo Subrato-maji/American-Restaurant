@@ -1,0 +1,29 @@
+@use "../utility/reuseble" as *;
+@use  "../utility" as *;
+
+.signup{
+    & .para-text{
+margin-top: 1.68rem;
+    }
+}
+
+.terms{
+    margin-bottom: 1.5rem;
+    &-text{
+        color: var(--color-grey);
+        font-size: var(--font-label);
+        
+        
+    }
+    &-link{
+        color: var(--color-orange) ;
+        text-decoration: underline ;
+        font-weight: var(--weight-500);
+        &:hover{
+            color: var(--color-orange) ;
+          
+            
+        }
+    }
+   
+}

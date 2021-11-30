@@ -1,0 +1,33 @@
+@use "../utility/reuseble" as *;
+@use  "../utility" as *;
+
+
+.login{
+    .para-text{
+        margin: 1.35rem 0;
+    }                                                                                                                                                           
+}
+.form{
+    &-remember{
+        color: var(--color-grey);
+        font-size: .875rem; //14px
+    }
+    &-forget{
+        font-size: .875rem; //14px
+        font-weight: var(--weight-500);
+        @extend %text-orange;
+        &:hover{
+            @extend %text-orange;
+        }
+    }
+    &-register{
+        font-size: 1rem;
+        font-weight: var(--weight-600);
+        @extend %text-orange;
+        &:hover{
+            @extend %text-orange;
+        }
+    }
+  
+}
+
