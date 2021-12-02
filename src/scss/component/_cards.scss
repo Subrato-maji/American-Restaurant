@@ -1,42 +1,50 @@
+@use "../utility/reuseble"as *;
 
-@use "../utility/reuseble" as *;
-
-.product{
+.product {
     & .row {
-        &> * { 
-            padding:0 .625rem;
+        &>* {
+            padding: 0 .625rem;
             margin-bottom: 1rem;
         }
     }
-   
-        margin-top: 1.9375rem;
-        &-wraper{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            padding: .8125rem;
-            background-color: var(--color-white);
-        }
-        &-title{
-            font-size: .8125rem;
-            margin-bottom: .2rem;
-            color: var(--color-dark-3);
-            font-weight: var(--weight-400);
-        
-        }
-        &-price{
-            font-size: 1.125rem;
-            color: var(--color-dark-3);
-            font-weight: var(--weight-700);
-        }
-        &-btn{
-            padding: 0.48rem 1.688rem;
-            line-height: 18.5px;
-            border-radius: 0;
-            font-size: .935rem;
-            font-weight: var(--weight-600);
-            @extend %text-orange;
-            
+
+    margin-top: 1.9375rem;
+
+    &-wraper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: .8125rem;
+        background-color: var(--color-white);
+    }
+
+    &-title {
+        font-size: .8125rem;
+        margin-bottom: .2rem;
+        color: var(--color-dark-3);
+        font-weight: var(--weight-400);
+
+    }
+
+    &-price {
+        font-size: 1.125rem;
+        color: var(--color-dark-3);
+        font-weight: var(--weight-700);
+    }
+
+    &-btn{
+        padding: 0.48rem 1.688rem;
+        line-height: 18.5px;
+        border-radius: 0;
+        font-size: .935rem;
+        font-weight: var(--weight-600);
+        @extend %text-orange;
+
+        &:hover {
+            color: var(--color-white) !important;
+            @extend %background-orange;
 
         }
+
     }
+}
