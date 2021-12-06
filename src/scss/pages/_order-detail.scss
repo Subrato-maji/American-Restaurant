@@ -1,0 +1,45 @@
+@use "../utility/reuseble"as *;
+@use "../utility"as *;
+
+.order {
+    margin-top: 1.9375rem;
+
+    &-card {
+        padding: 1rem 1.5rem;
+        border: 1px solid var(--color-light-grey-2);
+        @extend %background-white;
+    }
+&-link{
+    &:hover,
+    & :active {
+        & .order-card{
+            border: 1px solid var(--color-orange);
+        transition: all ease-in-out .2s;
+        }
+
+        & .order-icon {
+            @extend %text-orange;
+        }
+        & .order-number{
+            @extend %text-orange;
+        }
+
+    }
+}
+    &-number {
+        font-size: 1rem;
+        font-weight: var(--weight-700);
+        @extend %text-black;
+
+    }
+
+    &-time {
+        font-size: .875rem;
+        font-weight: var(--weight-500);
+        @extend %text-grey;
+    }
+    &-icon{
+        @extend %text-black;
+
+    }
+}

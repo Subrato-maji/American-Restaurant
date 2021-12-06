@@ -14,10 +14,12 @@
         background-color: var(--color-white);
         box-shadow: 0px 12px 38px var(--color-box-shadow);
     }
-&-outline{
-    border: 3px solid var(--color-orange);
-    background-color: var(--color-white-2);
-}
+
+    &-outline {
+        border: 3px solid var(--color-orange);
+        background-color: var(--color-white-2);
+    }
+
     &-orange {
         color: var(--color-white);
         background-color: var(--color-orange);
@@ -48,10 +50,57 @@
             margin-right: 1rem;
         }
     }
-    &-signup{
+
+    &-signup {
         width: 100%;
-        @include mediaMin(md){
+
+        @include mediaMin(md) {
             width: 50%;
         }
     }
+
+    // &-cart {
+    //     text-transform: capitalize;
+
+    //     @include mediaMin(xs) {
+    //         padding: 0.425rem 1rem;
+    //     }
+
+    //     @include mediaMin(xxl) {
+    //         padding: 0.625rem 1.75rem;
+    //     }
+
+    //     img {
+    //         @include mediaMin(xs) {
+    //             width: 22px;
+    //             height: 22px;
+    //         }
+
+    //         @include mediaMin(lg) {
+    //             width: 36px;
+    //             height: 28px;
+    //         }
+    //     }
+
+    //     .badge {
+    //         background-color: var(--color-white);
+    //         color: var(--color-orange);
+
+    //         @include mediaMin(xs) {
+    //             font-size: .6rem;
+    //             padding: 4px 6px;
+    //             top: 0.3rem;
+    //         }
+
+    //         @include mediaMin(lg) {
+    //             top: .5rem;
+    //             font-size: 0.813rem;
+    //             padding: 4px 6px;
+    //         }
+    //     }
+    // }
+
+    // &-order-now {
+    //     padding: 1.1rem 3.3rem;
+    // }
 }

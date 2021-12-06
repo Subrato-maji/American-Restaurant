@@ -1,0 +1,88 @@
+@use "../utility/reuseble" as *;
+@use  "../utility" as *;
+
+footer {
+    width: 100%;
+    background: var(--color-dark);
+    
+    .footer-inner {
+        margin: auto;
+        padding-top: 7.3rem;
+        @include mediaMin(xs){
+            width: 100%;
+        }
+        @include mediaMin(lg){
+            width: 75%;
+        }
+        .center {
+            @include mediaMin(xs){
+                justify-content: center;
+            }
+            @include mediaMin(lg){
+                justify-content: flex-start;
+            }
+        }
+        .d-flex-footer {
+            display: flex;
+            @include mediaMin(xs){
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+            @include mediaMin(lg){
+                flex-direction: row;
+                text-align: left;
+                align-items: flex-start;
+            }
+        }
+        .footer-heading {
+            font-size: 1.625rem;
+            font-weight: var(--weight-700);
+            color: var(--color-white);
+            text-transform: capitalize;
+            @include mediaMin(xs){
+                margin-bottom: 1rem;
+            }
+            @include mediaMin(lg){
+                margin-bottom: 3rem;
+            }
+        }
+        .mar-top {
+            @include mediaMin(xs){
+                margin-top: 4rem;
+            }
+            @include mediaMin(lg){
+                margin-top: 0;
+            }
+        }
+        .map-box {
+            height: 10.3rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            @include mediaMin(xs){
+                width: 100%;
+                justify-content: center;
+            }
+            @include mediaMin(lg){
+                width: 18rem;
+                justify-content: flex-start;
+            }
+        }
+        .orange-link {
+            font-size: 0.875rem;
+            color:var(--color-orange);
+        }
+        .footer-text {
+            font-size: 1rem;
+            color: var(--color-white);
+        }
+        .fs-14 {
+            font-size: 14px;
+        }
+        .icon {
+            width: 1rem;
+            height: 1rem;
+            margin-right: 1.125rem;
+        }
+    }
+}

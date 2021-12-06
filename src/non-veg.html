@@ -19,19 +19,103 @@
     <noscript>
         <link rel="stylesheet" href="assets/css/main.css">
     </noscript>
+    <style>
+        .header-white {
+    width: 100%;
+    height: 89px;
+    background-color: var(--color-white);
+    position: fixed;
+}
+
+    </style>
 </head>
 
 <body>
-    <header>
-        <!-- header-part comes here -->
+    <header class="header-white d-flex align-items-center">
+        
+        <div class="col-3">
+            <a class="navbar-brand" href="landing.html">
+                <img src="./images/logo-black.png" alt="logo img" class="logo-black"/>
+            </a>
+        </div>
+        <div class="col-6">
+            <div class="d-flex justify-content-between">
+                <p class="d-flex">
+                    <span>
+                        <img src="./images/cart-orange.png" alt="cart"/>
+                    </span>Open: 11:30 am - 10:30 pm</p>
+                <p class="d-flex">
+                    <span><img src="./images/cart-orange.png" alt="cart"/></span>85 Bay Meadows Drive Woodstock, GA 30188, United States</p>
+            </div>
+        </div>
+        <div class="col-3">
+            <a class="navbar-brand float-end d-flex" href="landing.html">
+                <img src="./images/cart-orange.png" alt="cart"/>
+                <span style="color: #FF4E00;">3</span>
+            </a>
+        </div>
     </header>
+          <!-- ======== dummy header bar for fixed position manage============  -->
+          <div style="width: 100%; height: 89px;"></div>
     <section class="main-section entry-section">
         <div class="container-fluid">
             <div class="row ">
-                <div class="col-2">
+                <div class="col-3">
+               
+                    <div class="main-wrapper">
+                        <aside class="left custom-scroll">
+                            <nav class="nav flex-column">
+                                <a href="javascript:void(0)"
+                                    class="nav-item nav-link side-nav-link active d-flex justify-content-between align-items-center">
+                                    <span>Appetizers</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)"
+                                    class="nav-item nav-link side-nav-link d-flex justify-content-between align-items-center">
+                                    <span>Vegetarian Entree</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </a>
+                                <a href="javascript:void(0)"
+                                    class="nav-item nav-link side-nav-link d-flex justify-content-between align-items-center">
+                                    <span>Non-Vegetarian Entree</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                    </svg>
+                                </a>
 
+                                <div class="side-nav-link position-absolute w-100" style="bottom: 1rem;">
+                                    <a href="javascript:void(0)"
+                                        class="d-flex justify-content-between align-items-center">
+                                        <span style="color: #111112">Privacy | Terms</span>
+                                        <span style="color: #FF4E00;">
+                                            Order History
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="#FF4E00" width="16"
+                                                height="16" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <a href="javascript:void(0)" class="d-flex justify-content-between">
+                                        <span style="color: #111112">test@abc.com <span style="color: #FF4E00;">( Logout
+                                                )</span>
+                                    </a>
+                                </div>
+                            </nav>
+                        </aside>
+                    </div>
                 </div>
-                <div class="col-8">
+                <div class="col-6">
                     <div class="row">
                         <div class="col-12">
                             <h1 class=" main-title ">
@@ -130,8 +214,78 @@
                 </div>
 
 
-                <div class="col-2">
-
+                <div class="col-3">
+                 
+                    <div class="main-wrapper2">
+                    <aside class="right custom-scroll">
+                        <div class="item-card">
+                            <p class="d-flex justify-content-between item-name">
+                                <span>Peach Cobbler</span>
+                                <span>$27.00</span>
+                            </p>
+                            <div class="mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="active-circle"></div>
+                                    <p class="fw-500">Spice Level - </p>
+                                    <span class="fw-300"> &nbsp; Mild</span>
+                                </div> 
+                                <div class="d-flex align-items-center ">
+                                    <div class="active-circle"></div>
+                                    <p class="fw-500">Meat Option - </p>
+                                    <span class="fw-300">&nbsp; Chicken ( $20.52 )</span>
+                                </div> 
+            
+                            </div>
+                            
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="quantity-box d-flex justify-content-between align-items-center">
+                                    <span class="quantity">-</span>
+                                    <span class="quantity quantity-color">1</span>
+                                    <span class="quantity">+</span>
+                                </div>
+                                <img src="./images/delete.png" alt="delete"/>
+                            </div>
+                        </div>
+            
+                        <div class="item-card">
+                            <p class="d-flex justify-content-between item-name">
+                                <span>Peach Cobbler</span>
+                                <span>$27.00</span>
+                            </p>
+                            <div class="mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="active-circle"></div>
+                                    <p class="fw-500">Spice Level - </p>
+                                    <span class="fw-300"> &nbsp; Mild</span>
+                                </div> 
+                                <div class="d-flex align-items-center ">
+                                    <div class="active-circle"></div>
+                                    <p class="fw-500">Meat Option - </p>
+                                    <span class="fw-300">&nbsp; Chicken ( $20.52 )</span>
+                                </div> 
+            
+                            </div>
+                            
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="quantity-box d-flex justify-content-between align-items-center">
+                                    <span class="quantity">-</span>
+                                    <span class="quantity quantity-color">1</span>
+                                    <span class="quantity">+</span>
+                                </div>
+                                <img src="./images/delete.png" alt="delete"/>
+                            </div>
+                        </div>   
+            
+                        <div class="item-card border-bottom-0">
+                            <p class="d-flex justify-content-between item-name mb-4">
+                                <span>Subtotal</span>
+                                <span>$81.00</span>
+                            </p>
+                            <button class="btn btn-orange btn-formaction btn-signup w-100">PAY</button>
+                        </div>
+                       
+                    </aside>
+                    </div>
                 </div>
             </div>
         </div>
