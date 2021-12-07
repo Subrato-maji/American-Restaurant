@@ -29,19 +29,22 @@
                     <img src="./images/logo.png" alt="brand-logo " class=" header-logo" />
                 </a>
                 <div class="d-flex ms-auto">
-                    <button class="btn btn-orange btn-cart d-block d-lg-none" > 
+                    <button class="btn btn-orange btn-cart d-block d-lg-none">
                         <div class="position-relative">
                             <img src="images/shopping-cart.png" alt="cart-image">
-                            <span class="position-absolute start-100 translate-middle badge p-1 pills rounded-circle ">13</span>
+                            <span
+                                class="position-absolute start-100 translate-middle badge p-1 pills rounded-circle ">13</span>
                         </div>
                     </button>
                     <button class="navbar-toggler ms-2 p-1" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="#FF4E00" class="bi bi-list" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                              </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="#FF4E00"
+                                class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                            </svg>
                         </span>
                     </button>
                 </div>
@@ -68,11 +71,12 @@
                         </li>
                     </ul>
                     <div class="d-flex ms-auto">
-                        <button class="btn btn-white btn-signin  me-3 d-none d-lg-block" >Sign in</button>
-                        <button class="btn btn-orange btn-cart d-none d-lg-block" > 
+                        <button class="btn btn-white btn-signin  me-3 d-none d-lg-block">Sign in</button>
+                        <button class="btn btn-orange btn-cart d-none d-lg-block">
                             <div class="position-relative">
                                 <img src="images/shopping-cart.png" alt="cart-image">
-                                <span class="position-absolute start-100 translate-middle badge p-1 pills rounded-circle ">13</span>
+                                <span
+                                    class="position-absolute start-100 translate-middle badge p-1 pills rounded-circle ">13</span>
                             </div>
                         </button>
                     </div>
@@ -84,40 +88,50 @@
         <div class="container-fluid">
             <div class="row align-items-center justify-content-center">
                 <div class="col-auto ">
-                    <div class="prefield-card reserve-card">
+                    <div class="prefield-card avalible-card">
                         <div class="row justify-content-center">
                             <div class="col-12">
                                 <h2 class="main-heading h2 text-center ">
                                     Check your Preferred Availability!
-
                                 </h2>
-
                             </div>
                             <div class="col-sm-10">
-                                <div class="avalible-time d-flex">
-                                    <select class="form-select form-input form-select-lg "
-                                        aria-label=".form-select-lg example">
-                                        <option selected>Open </option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                    <select class="form-select form-input form-select-lg "
-                                        aria-label=".form-select-lg example">
-                                        <option selected>Open this select menu</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select><select class="form-select form-input form-select-lg "
-                                        aria-label=".form-select-lg example">
-                                        <option selected>Open this select menu</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-
+                                <div class="avalible-time d-flex justify-content-between flex-wrap">
+                                    <div class="avalible-people">
+                                        <label for="people" class="form-label">How Many?</label>
+                                        <div class="input-box d-flex justify-content-between align-items-center ">
+                                          <img src="images/user.png" alt="user">
+                                            <p class="para-text">10</p>
+                                            <div class="arrow d-flex flex-column">
+                                                <i class="fas fa-angle-up"></i>
+                                                <i class="fas fa-angle-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="avalible-date">
+                                        <label for="people" class="form-label">When?</label>
+                                        <div class="input-box d-flex justify-content-between align-items-center ">
+                                          <img src="images/calendar.png" alt="user">
+                                            <p class="para-text">Sun, Aug 10, 2021</p>
+                                            <div class="arrow d-flex flex-column">
+                                                <i class="fas fa-angle-up"></i>
+                                                <i class="fas fa-angle-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="avalible-clock">
+                                        <label for="people" class="form-label">At What Time?</label>
+                                        <div class="input-box d-flex justify-content-between align-items-center ">
+                                          <img src="images/clock.png" alt="user">
+                                            <p class="para-text">11:30 AM</p>
+                                            <div class="arrow d-flex flex-column">
+                                                <i class="fas fa-angle-up"></i>
+                                                <i class="fas fa-angle-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <button class="btn btn-orange  w-100 btn-form-action ">Confirm Reservation</button>
+                                <button class="btn btn-orange  w-100 btn-form-action ">Check Availability</button>
                             </div>
 
                         </div>
@@ -207,7 +221,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <!-- font-awesome cdn -->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+        crossorigin="anonymous"></script>
 
 </body>
 

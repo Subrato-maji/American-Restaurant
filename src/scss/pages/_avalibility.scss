@@ -2,11 +2,35 @@
 @use "../utility"as *;
 
 .avalible{
+    margin-bottom: 17.5rem;
     & .main-heading{
         margin-bottom: 3.5rem;
+        font-weight: var(--weight-600);
     }
     &-time{
 
-        margin-bottom: 3.57rem;
+        margin-bottom: 2.57rem;
+         & > * {
+            margin-bottom: 1rem;
+            margin-right: .4rem;
+            @include mediaMax(lg){
+                width: 100%;
+            }
+        }
     }
-}
+   
+
+       
+        & .input{
+            &-box{
+                border: 1px solid  hsl( var(--color-hsl-dark) / 0.2);
+                border-radius: 5px;
+                padding: .8rem 1rem;
+                & .para-text{
+                    margin-inline: 1.5rem;
+                    font-size: 1rem;
+                    font-weight: var(--weight-700);
+                }
+            }
+        }
+    }
