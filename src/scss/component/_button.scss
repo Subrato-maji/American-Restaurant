@@ -9,7 +9,10 @@
     font-size: 1.125rem;
     border-radius: .3125rem;
     text-transform: capitalize;
-    
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
     &-white {
         color: var(--color-dark);
         background-color: var(--color-white);

@@ -1,15 +1,14 @@
 @use "../utility/reuseble" as *;
 @use  "../utility" as *;
 
-.main-wrapper2 {
+.main-wrapper {
     width: 100%;
     height: calc(100vh - 89px);
-    height: 100%;
     background-color: var(--color-white);
-    // display: flex;
+    display: flex;
     .right {
         max-width: 25rem;
-        // width: 28%;
+        width: 25%;
         height: 100%;
         border: 1px solid var(--color-border);
         position: relative;
@@ -38,6 +37,9 @@
             .fw-500 {
                 font-weight: var(--weight-500);
             }
+            .fw-900 {
+                font-weight: var(--weight-900);
+            }
             .quantity-box  {
                 width: 6.6rem;
                 border: 2px solid var(--color-orange);
@@ -50,7 +52,50 @@
             }
             .quantity-color {
                 color: var(--color-orange);
+            } 
+        }
+        //================== checkout page css ===================
+        .card-head {
+            padding: 1.5rem .5rem 1rem;
+            .head {
+                font-size: 1.3rem;
+                color: var(--color-dark);
+                font-weight: var(--weight-500);
+            }
+            .fw-700 {
+                font-weight: var(--weight-700);
+            }
+            .address {
+                width: 72%;
+                color: var(--color-grey);
+                margin: 0 auto;
+            }
+            .back {
+                color: var(--color-orange);
+                font-size: 1rem;
+                top: 3px;
             }
         }
+        .form-control,
+        .form-select{
+            border-radius: 0;
+            &:focus {
+                outline: 0;
+                box-shadow: none;
+                border: 2px solid var(--color-orange);
+                border-radius: 0;
+            }
+            label {
+                font-size: .8rem;
+                color: var(--color-grey);
+            }
+        }
+        .w-30 {
+            width: 30%;
+        }
+        .w-65 {
+            width: 65%;
+        }
+        
     }
 }

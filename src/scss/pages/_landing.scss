@@ -1,12 +1,6 @@
 @use "../utility/reuseble" as *;
 @use  "../utility" as *;
 
-
-
-// ============header css=============
-
-
-
 //=============landing css ============ 
 
 .banner-wrapper {
@@ -178,6 +172,7 @@
                 @include mediaMin(xs){
                     font-size: 1.1rem;
                 }
+                
                 @include mediaMin(lg){
                     font-size: 1.8rem;
                 }

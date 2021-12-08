@@ -11,13 +11,12 @@
 
 .main-wrapper {
     width: 100%;
-    // height: calc(100vh - 89px);
-    height: 100%;
+    height: calc(100vh - 89px);
     background-color: var(--color-white);
-    // display: flex;
+    display: flex;
     .left {
-        // max-width: 20rem;
-        // width: 25%;
+        max-width: 20rem;
+        width: 23%;
         height: 100%;
         border: 1px solid var(--color-border);
         position: relative;
@@ -35,6 +34,7 @@
         .active {
             background-color: var(--color-orange);
             color: var(--color-white);
+            border-radius: 0;
 
             svg {
                 fill: var(--color-white);
