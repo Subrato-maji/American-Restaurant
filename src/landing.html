@@ -26,14 +26,14 @@
         <nav class="navbar header-nav navbar-expand-lg p-0">
             <div class="container-fluid">
                 <a class=" header-brand" href="landing.html">
-                    <img src="./images/logo.png" alt="brand-logo " class=" header-logo" />
+                    <img src="./images/logo.png" alt="brand-logo" class="header-logo"/>
                 </a>
                 <div class="d-flex ms-auto">
                     <button class="btn btn-orange btn-cart d-block d-lg-none">
                         <div class="position-relative">
-                            <img src="images/shopping-cart.png" alt="cart-image">
+                            <img src="images/shopping-cart.png" alt="cart-image" class="img-fluid header-cart">
                             <span
-                                class="position-absolute start-100 translate-middle badge p-1 pills rounded-circle ">13</span>
+                                class="position-absolute badge p-1 pills rounded-circle">13</span>
                         </div>
                     </button>
                     <button class="navbar-toggler ms-2 p-1" type="button" data-bs-toggle="collapse"
@@ -74,9 +74,9 @@
                         <button class="btn btn-white btn-signin  me-3 d-none d-lg-block">Sign in</button>
                         <button class="btn btn-orange btn-cart d-none d-lg-block">
                             <div class="position-relative">
-                                <img src="images/shopping-cart.png" alt="cart-image">
+                                <img src="images/shopping-cart.png" alt="cart-image" class="img-fluid header-cart">
                                 <span
-                                    class="position-absolute start-100 translate-middle badge p-1 pills rounded-circle ">13</span>
+                                    class="position-absolute badge p-1 pills rounded-circle ">13</span>
                             </div>
                         </button>
                     </div>
@@ -219,71 +219,78 @@
         </div>
     </section>
 
-    <footer>
-        <div class="footer-inner">
-            <div class="d-flex-footer justify-content-between">
-                <div class="col-md-3">
-                    <h5 class="footer-heading">Contact us</h5>
-                    <div class="d-flex align-items-center mb-3 center">
-                        <img src="./images/call.png" alt="phone" class="icon" />
-                        <span class="footer-text">(876) 767-4345 </span>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container-fluid">
+                <div class="row justify-content-between">
+                    <div class="col-sm-6 col-lg-3">
+                        <h2 class="footer-heading">Contact us</h2>
+                        <div class="footer-contactlist">
+                            <p><a class="footer-contactlink" href="tel:(876) 767-4345"><span class="footer-icon"><i
+                                            class="fas fa-phone-alt"></i></span>(876) 767-4345</a></p>
+                            <p><a class="footer-contactlink" href="mailto:info@example.com"><span class="footer-icon"><i
+                                            class="fas fa-envelope"></i></span>info@example.com</a></p>
+                        </div>
+                        <div class="d-flex footer-socialmenu">
+                            <a class="footer-sociallink" href="javascript:void(0)">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="footer-sociallink" href="javascript:void(0)">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="footer-sociallink" href="javascript:void(0)">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                            <a class="footer-sociallink" href="javascript:void(0)">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a class="footer-sociallink" href="javascript:void(0)">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                            <a class="footer-sociallink" href="javascript:void(0)">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="d-flex align-items-center mb-5 center">
-                        <img src="./images/email.png" alt="phone" class="icon" />
-                        <span class="footer-text">info@example.com</span>
+                    <div class="col-sm-6 col-lg-3">
+                        <h2 class="footer-heading">Opening Hours</h2>
+                        <div class="footer-timezone">
+                            <p class="footer-timeinfo">Mon : <time>08:00 AM - 11:00 PM </time></p>
+                            <p class="footer-timeinfo">Tue : <time>08:00 AM - 11:00 PM </time></p>
+                            <p class="footer-timeinfo">Wed : <time>08:00 AM - 11:00 PM </time></p>
+                            <p class="footer-timeinfo">Tus : <time>08:00 AM - 11:00 PM </time></p>
+                            <p class="footer-timeinfo">Fri : <time>08:00 AM - 11:00 PM </time></p>
+                            <p class="footer-timeinfo">satu : <time>08:00 AM - 11:00 PM </time></p>
+                            <p class="footer-timeinfo">Sun : <span class="footer-timeinfo--close">Closed</span></p>
+                        </div>
                     </div>
+                    <div class="col-sm-12 col-lg-3">
+                        <h2 class="footer-heading">Location</h2>
+                        <div class="footer-maps">
+                            <img src="./images/map.png" alt="map" class="img-fluid footer-maps--img"/>
+                            <p class="footer-maps--text">1 Park Avenue, Los Angeles, LA 11210, USA</p>
+                            <a href="javascript:void(0)" class="footer-maps--text footer-maps--direction">Get
+                                directions</a>
+                        </div>
 
-                    <div class="d-flex center">
-                        <a href="javascript:void(0)">
-                            <img src="./images/Twitter.png" alt="twitter" class="me-4" />
-                        </a>
-                        <a href="javascript:void(0)">
-                            <img src="./images/facebook.png" alt="facebook" class="me-4" />
-                        </a>
-                        <a href="javascript:void(0)">
-                            <img src="./images/google-plus.png" alt="google-plus" class="me-4" />
-                        </a>
-                        <a href="javascript:void(0)">
-                            <img src="./images/linkedin.png" alt="linkedin" class="me-4" />
-                        </a>
-                        <a href="javascript:void(0)">
-                            <img src="./images/dribbble.png" alt="dribbble" class="me-4" />
-                        </a>
-                        <a href="javascript:void(0)">
-                            <img src="./images/pinterest.png" alt="pinterest" />
-                        </a>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <h5 class="footer-heading mar-top">opening hours</h5>
-                    <p class="footer-text">Mon : 08:00 AM - 11:00 PM</p>
-                    <p class="footer-text"> Tue : 08:00 AM - 11:00 PM </p>
-                    <p class="footer-text"> Wed : 08:00 AM - 11:00 PM </p>
-                    <p class="footer-text"> Tus : 08:00 AM - 11:00 PM </p>
-                    <p class="footer-text"> Fri : 08:00 AM - 11:00 PM </p>
-                    <p class="footer-text"> Satu : 08:00 AM - 11:00 PM </p>
-                    <p class="footer-text"> Sun : <span class="orange-link">Closed</span></p>
-                </div>
-                <div class="col-md-3">
-                    <h5 class="footer-heading mar-top">location</h5>
-                    <div class="map-box">
-                        <img src="./images/map.png" alt="map" />
-                    </div>
-                    <p class="footer-text fs-14">1 Park Avenue, Los Angeles, LA 11210, USA</p>
-                    <p>
-                        <a href="javascript:void(0)" class="orange-link">Get directions</a>
-                    </p>
                 </div>
             </div>
-            <div class="d-flex-footer mt-5 pb-3 justify-content-between">
-                <div class="col-md-3">
-                    <p class="footer-text fs-14">© 2021, American Restaurant</p>
-                </div>
-                <div class="col-md-3">
-                    <p class="footer-text fs-14">Powered by POS</p>
-                </div>
-                <div class="col-md-3">
-                    <p class="footer-text fs-14">Terms & Conditions | Privacy Policy</p>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom--wrapper">
+                <div class="container-fluid">
+                    <div class="row justify-content-between text-center">
+                        <div class="col-md-4 col-lg-3">
+                            <p class="footer-pageinfo">© 2021, American Restaurant</p>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <p class="footer-pageinfo">Powered by POS</p>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <a href="#" class="footer-pageinfo">Terms & Conditions <span class="footer-pageinfo--pipe"></span> Privacy Policy</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

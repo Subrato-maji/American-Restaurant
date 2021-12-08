@@ -1,12 +1,17 @@
-
+@use "../utility/mixin" as *;
+html{
+    font-size: 0.969rem;
+    @include mediaMin(xxl){
+        font-size: 1rem;
+    }
+    
+}
 body{
     background-color: var(--color-light-grey);
     font-weight: var(--weight-400);
     font-family: var(--font-family);
 
-    & .prefield-sec{
-        margin-top: 110px;
-    }
+  
 }
 
 
