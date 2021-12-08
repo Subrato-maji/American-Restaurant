@@ -6,11 +6,8 @@
         font-size: .875rem;
         font-weight: var(--weight-600);
         @extend %text-orange;
-
         &:hover {
             color: var(--color-orange);
-
-
         }
         &-edit{
             text-decoration: underline;
