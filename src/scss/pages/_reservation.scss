@@ -6,8 +6,12 @@
         font-size: .875rem;
         font-weight: var(--weight-600);
         @extend %text-orange;
+<<<<<<< HEAD
 
         &:hover {
+=======
+        &:hover ,&:focus {
+>>>>>>> 238254ecd1810980639947f24b06e40883cc6f44
             color: var(--color-orange);
 
 

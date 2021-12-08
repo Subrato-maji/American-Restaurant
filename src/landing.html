@@ -21,7 +21,7 @@
     </noscript>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="50">
     <header class="header position-fixed ">
         <nav class="navbar header-nav navbar-expand-lg p-0">
             <div class="container-fluid">
@@ -49,29 +49,29 @@
                     </button>
                 </div>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav  header-list">
                         <li class="nav-item header-item">
                             <a class="nav-link header-links  active" aria-current="page" href="landing.html">Home</a>
                         </li>
                         <li class="nav-item header-item">
-                            <a class="nav-link header-links" href="javascript:void(0)">about us</a>
+                            <a class="nav-link header-links" href="#about">about us</a>
                         </li>
                         <li class="nav-item header-item">
-                            <a class="nav-link header-links" href="javascript:void(0)">gallery</a>
+                            <a class="nav-link header-links" href="#gallery">gallery</a>
                         </li>
                         <li class="nav-item header-item">
-                            <a class="nav-link header-links" href="javascript:void(0)">Contact us</a>
+                            <a class="nav-link header-links" href="#contact">Contact us</a>
                         </li>
                         <li class="nav-item header-item">
-                            <a class="nav-link header-links" href="javascript:void(0)">reservation</a>
+                            <a class="nav-link header-links" href="reservation.html">reservation</a>
                         </li>
                         <li class="nav-item header-item d-block d-lg-none">
-                            <a class="nav-link header-links" href="javascript:void(0)">Sign in</a>
+                            <a class="nav-link header-links" href="index.html">Sign in</a>
                         </li>
                     </ul>
                     <div class="d-flex ms-auto">
-                        <button class="btn btn-white btn-signin  me-3 d-none d-lg-block">Sign in</button>
+                       <a href="index.html"> <button class="btn btn-white btn-signin  me-3 d-none d-lg-block" >Sign in</button></a>
                         <button class="btn btn-orange btn-cart d-none d-lg-block">
                             <div class="position-relative">
                                 <img src="images/shopping-cart.png" alt="cart-image" class="img-fluid header-cart">
@@ -91,14 +91,14 @@
                 <h1 class="hero-text">The Speciality of the American Restaurant Agency</h1>
                 <p class="sub-text">American Street Food is a fast casual italian cuisine restaurant chain with 26
                     locations in seven states.</p>
-                <button class="btn btn-orange btn-order-now mt-4" type="submit">
+             <a href="item-details.html">   <button class="btn btn-orange btn-order-now mt-4" type="submit">
                     Order Now
-                </button>
+                </button></a>
             </div>
         </div>
     </section>
 
-    <section class="about d-flex justify-content-center align-items-center">
+    <section class="about d-flex justify-content-center align-items-center" id="about">
         <div class="about-img">
             <img src="./images/about-img.png" alt="about" />
         </div>
@@ -118,7 +118,7 @@
         </div>
     </section>
 
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <h1 class="heading text-center mb-3">Restaurant Gallery</h1>
         <p class="sub-text pb-4">If a picture says a thousand words, then you can imagine how long it would take to
             describe all our mouthwatering selections.</p>
@@ -219,7 +219,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="footer-top">
             <div class="container-fluid">
                 <div class="row justify-content-between">
