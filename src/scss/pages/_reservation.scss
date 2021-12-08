@@ -6,7 +6,7 @@
         font-size: .875rem;
         font-weight: var(--weight-600);
         @extend %text-orange;
-        &:hover {
+        &:hover ,&:focus {
             color: var(--color-orange);
         }
         &-edit{
