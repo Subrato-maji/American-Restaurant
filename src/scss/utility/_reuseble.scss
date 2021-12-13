@@ -22,3 +22,32 @@
 %text-grey-3{
     color: var(--color-light-grey-3);
 }
+%inline{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+}
+%max{
+    &-lg{
+        max-width: var(--max-lg-width);
+        @extend %inline;
+        
+    }
+    &-md{
+        max-width: var(--max-md-width);
+        @extend %inline;
+    }
+}
+
+%fw{
+    &-700{
+        font-weight: var(--weight-700);
+    }
+    &-600{
+        font-weight: var(--weight-600);
+    }
+    &-500{
+        font-weight: var(--weight-500);
+    }
+}
