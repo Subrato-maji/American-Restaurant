@@ -6,12 +6,12 @@
         font-size: .875rem;
         font-weight: var(--weight-600);
         @extend %text-orange;
-        &:hover ,&:focus {
+
+        &:hover,
+        &:focus {
             color: var(--color-orange);
-
-
         }
-        &-edit{
+        &-edit {
             text-decoration: underline;
             font-weight: var(--weight-500);
             margin-top: 1.375rem;
@@ -38,8 +38,8 @@
         margin: 0.5rem 0 0.812rem 0;
     }
 
-    
-      
+
+
 
     .text {
         &-group {

@@ -22,7 +22,6 @@
 </head>
 
 <body>
-    <!-- header-part comes here -->
     <header class="header position-fixed ">
         <nav class="navbar header-nav navbar-expand-lg p-0">
             <div class="container-fluid">
@@ -30,15 +29,15 @@
                     <img src="./images/logo.png" alt="brand-logo" class="header-logo"/>
                 </a>
                 <div class="d-flex ms-auto">
-                    <button class="btn btn-orange btn-cart d-block d-lg-none">
+                    <a href="#" class="btn btn-orange btn-cart d-block d-lg-none">
                         <div class="position-relative">
                             <img src="images/shopping-cart.png" alt="cart-image" class="img-fluid header-cart">
                             <span
                                 class="position-absolute badge p-1 pills rounded-circle">13</span>
                         </div>
-                    </button>
+                    </a>
                     <button class="navbar-toggler ms-2 p-1" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        data-bs-target="#navbar" aria-controls="navbar"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="#FF4E00"
@@ -50,36 +49,36 @@
                     </button>
                 </div>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav  header-list">
                         <li class="nav-item header-item">
                             <a class="nav-link header-links  active" aria-current="page" href="landing.html">Home</a>
                         </li>
                         <li class="nav-item header-item">
-                            <a class="nav-link header-links" href="javascript:void(0)">about us</a>
+                            <a class="nav-link header-links" href="landing.html#about">about us</a>
                         </li>
                         <li class="nav-item header-item">
-                            <a class="nav-link header-links" href="javascript:void(0)">gallery</a>
+                            <a class="nav-link header-links" href="landing.html#gallery">gallery</a>
                         </li>
                         <li class="nav-item header-item">
-                            <a class="nav-link header-links" href="javascript:void(0)">Contact us</a>
+                            <a class="nav-link header-links" href="landing.html#contact">Contact us</a>
                         </li>
                         <li class="nav-item header-item">
-                            <a class="nav-link header-links" href="javascript:void(0)">reservation</a>
+                            <a class="nav-link header-links" href="reservation.html">reservation</a>
                         </li>
                         <li class="nav-item header-item d-block d-lg-none">
-                            <a class="nav-link header-links" href="javascript:void(0)">Sign in</a>
+                            <a class="nav-link header-links" href="index.html">Sign in</a>
                         </li>
                     </ul>
                     <div class="d-flex ms-auto">
-                        <button class="btn btn-white btn-signin  me-3 d-none d-lg-block">Sign in</button>
-                        <button class="btn btn-orange btn-cart d-none d-lg-block">
+                       <a href="index.html"class="btn btn-white btn-signin  me-3 d-none d-lg-block"> Sign in</a>
+                        <a  href="#" class="btn btn-orange btn-cart d-none d-lg-block">
                             <div class="position-relative">
                                 <img src="images/shopping-cart.png" alt="cart-image" class="img-fluid header-cart">
                                 <span
                                     class="position-absolute badge p-1 pills rounded-circle ">13</span>
                             </div>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -101,7 +100,7 @@
                             <div class="col-md-10 col-lg-8 ">
                                 <div class=" form-group">
                                     <label for="email" class="form-label">Email Id</label>
-                                    <input type="email" class="form-control form-control-lg form-input" id="email"
+                                    <input type="email" class="form-control form-control-lg form-input form-control-custom" id="email"
                                         placeholder="Email Id">
 
                                 </div>
@@ -110,7 +109,7 @@
                             <div class="col-md-10 col-lg-8 ">
                                 <div class=" form-group">
                                     <label for="password" class="form-label">Password</label>
-                                    <input type="password" class="form-control form-control-lg form-input" id="password"
+                                    <input type="password" class="form-control form-control-lg form-input form-control-custom" id="password"
                                         placeholder="******">
 
                                 </div>
@@ -146,7 +145,7 @@
                                                 fill="#ea4335" />
                                         </svg></span> Login with Google</a>
 
-                                <p class="para-text text-center">Don’t have an account? <a href="#"
+                                <p class="para-text text-center">Don’t have an account? <a href="register.html"
                                         class="form-register">Register Now</a></p>
                             </div>
 

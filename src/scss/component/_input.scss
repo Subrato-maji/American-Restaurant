@@ -27,5 +27,18 @@
             margin-bottom: 1rem;
         }
     }
-
 } 
+.form-control-custom,
+.form-select-custom{
+    border-radius: 0;
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+        border: 2px solid var(--color-orange);
+        border-radius: 0;
+    }
+    label {
+        font-size: .8rem;
+        color: var(--color-grey);
+    }
+}

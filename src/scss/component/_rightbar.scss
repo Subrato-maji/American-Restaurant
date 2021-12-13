@@ -76,20 +76,6 @@
                 top: 3px;
             }
         }
-        .form-control,
-        .form-select{
-            border-radius: 0;
-            &:focus {
-                outline: 0;
-                box-shadow: none;
-                border: 2px solid var(--color-orange);
-                border-radius: 0;
-            }
-            label {
-                font-size: .8rem;
-                color: var(--color-grey);
-            }
-        }
         .w-30 {
             width: 30%;
         }

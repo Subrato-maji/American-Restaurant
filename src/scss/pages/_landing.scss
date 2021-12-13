@@ -6,15 +6,12 @@
 .banner-wrapper {
     width: 100%;
     height: 107vh;
-    //height: 800px;
     background-image: url('../../images/banner.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     .banner-content-box {
-        @include mediaMin(xs){
-            width: 98%;
-            margin: 0 auto;
-        }
+        width: 98%;
+        margin: 0 auto;
         @include mediaMin(lg){
             width: 43.7rem;
             margin: 0;
@@ -24,18 +21,14 @@
             color: var(--color-white);
             line-height: 1;
             margin-bottom: 1.5rem;
-            @include mediaMin(xs){
-                font-size: 2.9rem;
-            }
+            font-size: 2.9rem;
             @include mediaMin(lg){
                 font-size: 4.1rem;
             }
         }
         .sub-text {
             font-size: 1.25rem;
-            @include mediaMin(xs){
-                color: var(--color-white);
-            }
+            color: var(--color-white);
             @include mediaMin(lg){
                 color: var(--color-grey);
             }
@@ -47,33 +40,26 @@
     font-weight: var(--weight-700);
     line-height: 1.1;
     margin-bottom: 1.9rem;
-
-    @include mediaMin(xs){
-        font-size: 2.5rem;
-    }
+    font-size: 2.5rem;
     @include mediaMin(lg){
         font-size: 3.25rem;
     }
 }
 .about {
     background-color: var(--color-bg-gray);
-    @include mediaMin(xs){
-       padding: 5rem 0;
-       flex-direction: column-reverse;
-       width: 94%;
-       margin: auto;
-    }
+    padding: 5rem 0;
+    flex-direction: column-reverse;
+    width: 94%;
+    margin: auto;
     @include mediaMin(lg){
-        padding: 7.75rem 0 9rem;
+        padding: 7.75rem 0 5rem;
         flex-direction: row;
         width: 100%;
     }
     .about-img {
         height: auto;
-        @include mediaMin(xs){
-            width: 98%;
-            margin: 2rem auto;
-        }
+        width: 98%;
+        margin: 2rem auto;
         @include mediaMin(lg){
             max-width: 40.6rem;
             width: 45%;
@@ -87,9 +73,7 @@
         }
     }
     .about-content {
-        @include mediaMin(xs){
-            width: 98%;
-        }
+        width: 98%;
         @include mediaMin(lg){
             width: 30rem;
         }
@@ -102,9 +86,9 @@
 }
 .gallery {
     background-color: var(--color-white);
-    @include mediaMin(xs){
-        padding-top: 0rem;
-    }
+    padding-top: 0rem;
+    max-width: 1920px;
+    margin: 0 auto;
     @include mediaMin(lg){
         padding-top: 8.5rem;
     }
@@ -114,9 +98,7 @@
         color:var(--color-grey);
         margin: auto;
         text-align: center;
-        @include mediaMin(xs){
-            width: 100%;
-        }
+        width: 100%;
         @include mediaMin(lg){
             width: 48rem;
         }
@@ -125,9 +107,7 @@
         height: auto;
         position: relative;
         overflow: hidden;
-        @include mediaMin(xs){
-            width: 33.33%;
-        }
+        width: 33.33%;
         @include mediaMin(lg){
             width: 20%;
         }
@@ -165,14 +145,11 @@
             transition: all 0.3s ease-in-out 0s;
 
             h3{
-                color: var(--color-white);
+                color: var(--color-white);             
                 font-weight: var(--weight-700);
                 text-transform: capitalize;
                 text-align: center;
-                @include mediaMin(xs){
-                    font-size: 1.1rem;
-                }
-                
+                font-size: 1.1rem;
                 @include mediaMin(lg){
                     font-size: 1.8rem;
                 }
