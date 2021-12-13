@@ -2,10 +2,9 @@
 @use "../utility"as *;
 
 .avalible{
-    margin-bottom: 17.5rem;
     & .main-heading{
         margin-bottom: 3.5rem;
-        font-weight: var(--weight-600);
+        @extend %fw-600;
     }
     &-time{
 
@@ -18,9 +17,7 @@
             }
         }
     }
-   
-
-       
+    
         & .input{
             &-box{
                 border: 1px solid  hsl( var(--color-hsl-dark) / 0.2);
@@ -29,7 +26,7 @@
                 & .para-text{
                     margin-inline: 1.5rem;
                     font-size: 1rem;
-                    font-weight: var(--weight-700);
+                    @extend %fw-700;
                 }
             }
         }

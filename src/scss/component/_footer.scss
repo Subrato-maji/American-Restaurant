@@ -9,12 +9,8 @@
         padding-top: 7.313rem;
     }
     @extend %text-white;
-    %max-width {
-        max-width: 1140px;
-        margin: auto;
-    }
     &-top {
-        @extend %max-width;
+        @extend %max-md;
         padding: 0 0.5rem;
         & .row{
             & >  *{
@@ -26,13 +22,11 @@
         background-color: var(--color-black);
         padding: 2rem 0;
         &--wrapper {
-            @extend %max-width;
+            @extend %max-md;
         }
     }
 
     &-heading {
-        font-size: 1.625rem;
-        font-weight: var(--weight-600);
         margin-bottom: 1.5rem;
         @include mediaMin(xl) {
             margin-bottom: 3rem;
@@ -68,7 +62,6 @@
     }
     &-contactlink {
         color: currentColor !important;
-        font-weight: var(--weight-400);
     }
     &-icon {
         vertical-align: middle;
@@ -82,7 +75,6 @@
         }
     }
     &-timeinfo {
-        font-weight: var(--weight-400);
         &--close {
             color: var(--color-orange-1);
         }
@@ -114,7 +106,7 @@
         &--pipe{
             &::after{
                 content: "|";
-               width: 5px;
+                width: 5px;
                 display: inline-block;
                 color: inherit;
             }

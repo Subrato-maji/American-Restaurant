@@ -1,22 +1,17 @@
-
+@use "../utility/reuseble" as *;
 
 .form{
-   &-group{
-       margin-bottom: 1rem;
-   }
+    &-group{
+        margin-bottom: 1rem;
+    }
     &-input{
         border-color:  hsl( var(--color-hsl-dark) / 0.2) ;
         border-radius: 5px;
         &::placeholder{
             color: hsl( var(--color-hsl-dark) / 0.7) ;
             font-size: 0.97rem;
-            font-weight: var(--weight-500);
-        }
-        &:focus{
-            box-shadow: none !important;
-         
-        }
-        
+            @extend %fw-500;
+        }  
     }
     &-checkbox{
         min-width: 1rem;
@@ -27,18 +22,5 @@
             margin-bottom: 1rem;
         }
     }
+
 } 
-.form-control-custom,
-.form-select-custom{
-    border-radius: 0;
-    &:focus {
-        outline: 0;
-        box-shadow: none;
-        border: 2px solid var(--color-orange);
-        border-radius: 0;
-    }
-    label {
-        font-size: .8rem;
-        color: var(--color-grey);
-    }
-}

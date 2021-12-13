@@ -1,0 +1,2 @@
+const rippleAnimation=document.querySelectorAll(".ripple");rippleAnimation.forEach((e=>{e.addEventListener("click",(function(e){const t=e.clientX,n=e.clientY,i=e.target.offsetTop,l=t-e.target.offsetLeft,c=n-i,o=document.createElement("span");o.classList.add("btn-circles"),o.style.top=c+"px",o.style.left=l+"px",this.appendChild(o),setTimeout((()=>o.remove()),500)}))}));
+//# sourceMappingURL=main.js.map

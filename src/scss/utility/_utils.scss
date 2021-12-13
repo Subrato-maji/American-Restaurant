@@ -1,19 +1,37 @@
 @use "mixin"as *;
+@use "../utility/reuseble" as *;
 
 .prefield {
     &-sec {
-        margin-top: 110px;
+        margin-top: 100px;
         padding: 0 .5rem;
     }
-
     &-card {
         background-color: var(--color-white);
-        padding: 1.875rem; //30px
+        padding: 1.875rem 1.5rem; //30px
         max-width: 859px;
-        margin: 3.85rem 0;
-
+        margin: 3rem 0;
         @include mediaMin(md) {
             padding: 3.75rem;
+        }
+    }
+    @include mediaMin(xl){
+        &-sec{
+            margin-top: 110px;
+        }
+        &-card{
+            margin: 3.85rem 0;
+        }
+    }
+}
+
+.main{
+    &-innerwrap{
+        &--lg{
+            @extend %max-lg;
+        }
+        &--md{
+            @extend %max-md;
         }
     }
 }
