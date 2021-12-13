@@ -18,10 +18,21 @@
     --weight-#{$var}: #{$val};
 
   }
-
   // font-size
-  --font-h1:3rem;
-  --font-h2:2rem;
-  --font-label: 0.938rem;
-
+  --font-h1:1.9rem;
+  --font-h2:1.7rem;
+  --font-h3:1.625rem;
+  --font-label: 0.9375rem;
+  --max-lg-width: 1406px;
+  --max-md-width: 1140px;
+  @include mediaMin(sm){
+    --font-h1:2.45rem;
+  }
+  @include mediaMin(md){
+    --font-h2:1.85rem;
+  }
+  @include mediaMin(xl){
+    --font-h1:3.25rem;
+    --font-h2:2rem;
+  }
 }

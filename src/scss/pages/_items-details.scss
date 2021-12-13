@@ -1,0 +1,47 @@
+@use "../utility/reuseble"as *;
+@use "../utility"as *;
+
+.header-white {
+  width: 100%;
+  height: 89px;
+  background-color: var(--color-white);
+  position: fixed;
+  border-bottom: 1px solid var(--color-border);
+  z-index: 2;
+}
+.main-wrapper {
+  width: 100%;
+  height: calc(100vh - 89px);
+  background-color: var(--color-white);
+  display: flex;
+}
+.center-div {
+  width: 55%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0rem 1rem;
+} 
+.text-orange {
+  @extend %text-orange;
+}
+.text-dark {
+  @extend %text-dark;
+}
+.main-sec {
+  padding-top: 5.5rem;
+}
+
+//========== scroll bar for left and right bars =================
+.custom-scroll::-webkit-scrollbar {
+    width: 3px;
+}
+.custom-scroll::-webkit-scrollbar-track {
+  background: var(--color-light-grey); 
+}
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: var(--color-orange); 
+}
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--color-orange); 
+}

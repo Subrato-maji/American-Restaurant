@@ -26,19 +26,18 @@
         <nav class="navbar header-nav navbar-expand-lg p-0">
             <div class="container-fluid">
                 <a class=" header-brand" href="landing.html">
-                    <img src="./images/logo.png" alt="brand-logo" class="header-logo"/>
+                    <img src="./images/logo.png" alt="brand-logo" class="header-logo" />
                 </a>
                 <div class="d-flex ms-auto">
                     <a href="#" class="btn btn-orange btn-cart d-block d-lg-none">
                         <div class="position-relative">
                             <img src="images/shopping-cart.png" alt="cart-image" class="img-fluid header-cart">
-                            <span
-                                class="position-absolute badge p-1 pills rounded-circle">13</span>
+                            <span class="position-absolute badge p-1 pills rounded-circle">13</span>
                         </div>
                     </a>
                     <button class="navbar-toggler ms-2 p-1" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbar" aria-controls="navbar"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                        data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
+                        aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" fill="#FF4E00"
                                 class="bi bi-list" viewBox="0 0 16 16">
@@ -71,12 +70,11 @@
                         </li>
                     </ul>
                     <div class="d-flex ms-auto">
-                       <a href="index.html"class="btn btn-white btn-signin  me-3 d-none d-lg-block"> Sign in</a>
-                        <a  href="#" class="btn btn-orange btn-cart d-none d-lg-block">
+                        <a href="index.html" class="btn btn-white btn-lg me-3 d-none d-lg-block"> Sign in</a>
+                        <a href="#" class="btn btn-orange btn-cart d-none d-lg-block">
                             <div class="position-relative">
                                 <img src="images/shopping-cart.png" alt="cart-image" class="img-fluid header-cart">
-                                <span
-                                    class="position-absolute badge p-1 pills rounded-circle ">13</span>
+                                <span class="position-absolute badge p-1 pills rounded-circle ">13</span>
                             </div>
                         </a>
                     </div>
@@ -91,37 +89,36 @@
                     <div class="signup-card prefield-card">
                         <div class="row justify-content-center">
                             <div class="col-12">
-                                <h1 class="main-heading h1 text-center">
+                                <h1 class="main-heading h2 text-center">
                                     Sign Up
                                 </h1>
                             </div>
                             <div class=" col-md-6 ">
-                                <div class="input_group form-group ">
-                                    <label for="FormControlInput1" class="form-label ">First Name</label>
+                                <div class="form-group ">
+                                    <label for="firstName" class="form-label ">First Name</label>
                                     <input type="text" class="form-control form-control-lg form-input"
-                                        id="exampleFormControlInput1" placeholder="First Name">
+                                        id="firstName" placeholder="First Name">
                                 </div>
                             </div>
-                            <div class=" col-md-6 ">
-                                <div class="input_group form-group">
-                                    <label for="exampleFormControlInput1" class="form-label ">Last
-                                        Name</label>
+                            <div class=" col-md-6">
+                                <div class="form-group">
+                                    <label for="lastNamwe" class="form-label">Last Name</label>
                                     <input type="text" class="form-control form-control-lg form-input"
-                                        id="exampleFormControlInput1" placeholder="Last Name">
+                                        id="lastNamwe" placeholder="Last Name">
                                 </div>
                             </div>
-                            <div class=" col-md-6 ">
-                                <div class="input_group form-group">
-                                    <label for="exampleFormControlInput1" class="form-label ">Email Id</label>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="emailID" class="form-label ">Email Id</label>
                                     <input type="email" class="form-control form-control-lg form-input"
-                                        id="exampleFormControlInput1" placeholder="Email Id">
+                                        id="emailID" placeholder="Email Id">
                                 </div>
                             </div>
                             <div class=" col-md-6 ">
-                                <div class="input_group form-group">
-                                    <label for="exampleFormControlInput1" class="form-label ">Mobile Number</label>
+                                <div class="form-group">
+                                    <label for="PhoneNumber" class="form-label">Mobile Number</label>
                                     <input type="tel" class="form-control form-control-lg form-input"
-                                        id="exampleFormControlInput1" placeholder="(657) 546-8796">
+                                        id="PhoneNumber" placeholder="(657) 546-8796">
                                 </div>
                             </div>
                             <div class="col-12">
@@ -129,16 +126,15 @@
                                     <input class="form-check-input form-checkbox" type="checkbox" value="1"
                                         id="terms-check">
                                     <label for="terms terms-check" class="terms-text"> <span>I agree to the</span>
-                                        <a href="#" class="terms-link"> Terms of Service and Privacy Policy</a>
-                                        and
-                                        <a href="#" class="terms-link">Privacy Policy</a>
+                                        <a href="#" class="terms-link"> Terms of Service</a> and <a href="#"
+                                            class="terms-link">Privacy Policy</a>
                                     </label>
                                 </div>
 
                             </div>
-                            <div class="col">
+                            <div class="col-md-6">
                                 <div class="text-center">
-                                    <button class="btn btn-orange btn-formaction btn-signup">Continue</button>
+                                    <button class="btn btn-orange w-100">Continue</button>
                                     <p class="para-text">Already have an account?
                                         <a href="index.html" class="form-register">Login Now</a>
                                     </p>
@@ -150,12 +146,13 @@
             </div>
     </section>
 
-    <footer class="footer">
+    <!-- footer part comes here -->
+    <footer class="footer" id="contact">
         <div class="footer-top">
             <div class="container-fluid">
                 <div class="row justify-content-between">
                     <div class="col-sm-6 col-lg-3">
-                        <h2 class="footer-heading">Contact us</h2>
+                        <h2 class="footer-heading h3">Contact us</h2>
                         <div class="footer-contactlist">
                             <p><a class="footer-contactlink" href="tel:(876) 767-4345"><span class="footer-icon"><i
                                             class="fas fa-phone-alt"></i></span>(876) 767-4345</a></p>
@@ -184,7 +181,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-3">
-                        <h2 class="footer-heading">Opening Hours</h2>
+                        <h2 class="footer-heading h3">Opening Hours</h2>
                         <div class="footer-timezone">
                             <p class="footer-timeinfo">Mon : <time>08:00 AM - 11:00 PM </time></p>
                             <p class="footer-timeinfo">Tue : <time>08:00 AM - 11:00 PM </time></p>
@@ -196,14 +193,13 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-lg-3">
-                        <h2 class="footer-heading">Location</h2>
+                        <h2 class="footer-heading h3">Location</h2>
                         <div class="footer-maps">
-                            <img src="./images/map.png" alt="map" class="img-fluid footer-maps--img"/>
+                            <img src="./images/map.png" alt="map" class="img-fluid footer-maps--img" />
                             <p class="footer-maps--text">1 Park Avenue, Los Angeles, LA 11210, USA</p>
                             <a href="javascript:void(0)" class="footer-maps--text footer-maps--direction">Get
                                 directions</a>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -219,7 +215,8 @@
                             <p class="footer-pageinfo">Powered by POS</p>
                         </div>
                         <div class="col-md-4 col-lg-3">
-                            <a href="#" class="footer-pageinfo">Terms & Conditions <span class="footer-pageinfo--pipe"></span> Privacy Policy</a>
+                            <a href="#" class="footer-pageinfo">Terms & Conditions <span
+                                    class="footer-pageinfo--pipe"></span> Privacy Policy</a>
                         </div>
                     </div>
                 </div>

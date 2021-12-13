@@ -2,13 +2,13 @@
 @use "../utility"as *;
 
 .header {
-    padding: 1.5rem 0rem;
+    padding: 1.25rem 0.5rem;
     background-color: var(--color-dark);
     z-index: 2;
     width: 100%;
     top: 0;
     @include mediaMin(xl){
-        padding: 1.813rem .4rem;
+        padding: 1.813rem 0.5rem;
     }
     &-brand {
         max-width: 65%;
@@ -48,7 +48,7 @@
         }
         &.active {
             color: var(--color-orange);
-            font-weight: var(--weight-500);
+            @extend %fw-500;
         }
     }
     &-cart{
@@ -61,20 +61,9 @@
         }
     }
     & .btn {
-        &-signin {
-            @include mediaMin(lg){
-                padding: 0.875rem 1.5rem;
-                line-height: 22px;
-                height: 49px;
-                font-weight: var(--weight-700);
-            }
-            @include mediaMin(xxl){
-                padding: .875rem 3.3125rem;
-            }
-        }
-
         &-cart {
             padding: 0.5rem;
+            overflow: visible;
             font-size: 1rem;
             @include mediaMin(md){
                 padding:0.65rem;
@@ -100,6 +89,5 @@
                 }
             }
         }
-
     }
 }
