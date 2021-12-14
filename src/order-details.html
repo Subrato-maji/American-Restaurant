@@ -36,7 +36,7 @@
             <path
               d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
           </svg>
-          <span><span style="color: #FF4E00;"><b>Open:</b></span> 11:30 am - 10:30 pm</span>
+          <span><span class="text-orange"><b>Open:</b></span> 11:30 am - 10:30 pm</span>
         </p>
         <p class="d-flex">
           <img src="./images/location.png" alt="cart" width="22px" height="24px" class="me-2" />
@@ -47,363 +47,295 @@
     <div class="col-3">
       <a class="navbar-brand float-end d-flex" href="landing.html">
         <img src="./images/cart-orange.png" alt="cart" width="22px" height="24px" class="me-2" />
-        <span style="color: #FF4E00; font-size: 18px;">3</span>
+        <span class="text-orange">3</span>
       </a>
     </div>
   </header>
-  <section class="main-wrapper">
-    <aside class="left custom-scroll">
-      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-        <button class="nav-link active side-nav-link d-flex justify-content-between align-items-center"
-          id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab"
-          aria-controls="v-pills-home" aria-selected="true">
-          <span>Appetizers</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-chevron-right"
-            viewBox="0 0 16 16">
-            <path
-              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-          </svg>
-        </button>
+  <main class="main-sec">
+    <section class="main-wrapper">
+      <aside class="left custom-scroll">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <button class="nav-link active side-nav-link d-flex justify-content-between align-items-center"
+            id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab"
+            aria-controls="v-pills-home" aria-selected="true">
+            <span>Ongoing Orders</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-chevron-right"
+              viewBox="0 0 16 16">
+              <path
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
 
-        <button class="nav-link side-nav-link d-flex justify-content-between align-items-center"
-          id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab"
-          aria-controls="v-pills-profile" aria-selected="false">
-          <span>Vegetarian Entree</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-chevron-right"
-            viewBox="0 0 16 16">
-            <path
-              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-          </svg>
-        </button>
+          <button class="nav-link side-nav-link d-flex justify-content-between align-items-center"
+            id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab"
+            aria-controls="v-pills-profile" aria-selected="false">
+            <span>Completed Orders</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-chevron-right"
+              viewBox="0 0 16 16">
+              <path
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
 
-        <button class="nav-link side-nav-link d-flex justify-content-between align-items-center"
-          id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab"
-          aria-controls="v-pills-messages" aria-selected="false">
-          <span>Non-Vegetarian Entree</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-chevron-right"
-            viewBox="0 0 16 16">
-            <path
-              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-          </svg>
-        </button>
+          <button class="nav-link side-nav-link d-flex justify-content-between align-items-center"
+            id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab"
+            aria-controls="v-pills-messages" aria-selected="false">
+            <span>Cancelled Orders</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-chevron-right"
+              viewBox="0 0 16 16">
+              <path
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+          </button>
 
-        <div class="side-nav-link position-absolute w-100" style="bottom: 1rem;">
-          <a href="javascript:void(0)" class="d-flex justify-content-between align-items-center">
-            <span style="color: #111112">Privacy | Terms</span>
-            <span style="color: #FF4E00;">
-              Order History
-              <svg xmlns="http://www.w3.org/2000/svg" fill="#FF4E00" width="16" height="16" class="bi bi-chevron-right"
-                viewBox="0 0 16 16">
-                <path
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-              </svg>
-            </span>
-          </a>
-          <a href="javascript:void(0)" class="d-flex justify-content-between">
-            <span style="color: #111112">test@abc.com <span style="color: #FF4E00;">( Logout )</span>
-          </a>
-        </div>
-      </div>
-    </aside>
-    <section class="custom-scroll center-div">
-      <div class="row">
-        <div class="tab-content" id="v-pills-tabContent">
-          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-            <div class="col-12">
-              <h1 class=" main-title ">
-                Non-Vegetarian Entree <span class="main-title--light">(6 Items)</span>
-              </h1>
-            </div>
-            <div class="product">
-              <div class="row">
-                <div class="col-lg-4 col-md-6">
-                  <div class="product-card">
-                    <div class="product-image">
-                      <img src="images/image2.png" alt="food-images">
-                    </div>
-                    <div class="product-wraper">
-                      <div class="product-text">
-                        <h5 class="product-title">Peach Cobbler </h5>
-                        <p class="product-price">$14.59</p>
-                      </div>
-                      <button class="btn product-btn btn-outline">Add</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <div class="product-card">
-                    <div class="product-image">
-                      <img src="images/image3.png" alt="food-images">
-                    </div>
-                    <div class="product-wraper">
-                      <div class="product-text">
-                        <h5 class="product-title">Peach Cobbler </h5>
-                        <p class="product-price">$14.59</p>
-                      </div>
-                      <button class="btn product-btn btn-outline">Add</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <div class="product-card">
-                    <div class="product-image">
-                      <img src="images/image4.png" alt="food-images">
-                    </div>
-                    <div class="product-wraper">
-                      <div class="product-text">
-                        <h5 class="product-title">Peach Cobbler </h5>
-                        <p class="product-price">$14.59</p>
-                      </div>
-                      <button class="btn product-btn btn-outline">Add</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <div class="product-card">
-                    <div class="product-image">
-                      <img src="images/image5.png" alt="food-images">
-                    </div>
-                    <div class="product-wraper">
-                      <div class="product-text">
-                        <h5 class="product-title">Peach Cobbler </h5>
-                        <p class="product-price">$14.59</p>
-                      </div>
-                      <button class="btn product-btn btn-outline">Add</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <div class="product-card">
-                    <div class="product-image">
-                      <img src="images/image6.png" alt="food-images">
-                    </div>
-                    <div class="product-wraper">
-                      <div class="product-text">
-                        <h5 class="product-title">Peach Cobbler </h5>
-                        <p class="product-price">$14.59</p>
-                      </div>
-                      <button class="btn product-btn btn-outline">Add</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="side-nav-link position-absolute w-100" style="bottom: 1rem;">
+            <a href="javascript:void(0)" class="d-flex justify-content-between align-items-center">
+              <span class="text-dark">Privacy | Terms</span>
+              <span class="text-orange">
+                Order History
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#FF4E00" width="16" height="16"
+                  class="bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+              </span>
+            </a>
+            <a href="javascript:void(0)" class="d-flex justify-content-between">
+              <span class="text-dark">test@abc.com <span class="text-orange">( Logout )</span>
+            </a>
           </div>
-          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-            <div class="row">
+        </div>
+      </aside>
+      <section class="custom-scroll center-div">
+        <div class="row">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+              <div class="row">
+                <div class="col-12">
+                  <h1 class=" main-title ">
+                    Completed Orders <span class="main-title--light">(10 Orders)</span>
+                  </h1>
+                </div>
+                <div class="order">
+                  <div class="row">
+                    <div class="col-12">
+                      <a href="#" class="order-link d-block">
+                        <div class="order-card d-flex justify-content-between align-items-center">
+                          <div class="order-details">
+                            <h5 class="order-number">
+                              ORD ID 87987988798
+                            </h5>
+                            <h5 class="order-time">
+                              Date & Time: Aug 2,2021 11:30 AM
+                            </h5>
+                          </div>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="order-icon" width="16" height="16"
+                            class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path
+                              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                          </svg>
+                        </div>
+                      </a>
+                      <a href="#" class="order-link d-block">
+                        <div class="order-card d-flex justify-content-between align-items-center">
+                          <div class="order-details">
+                            <h5 class="order-number">
+                              ORD ID 87987988798
+                            </h5>
+                            <h5 class="order-time">
+                              Date & Time: Aug 2,2021 11:30 AM
+                            </h5>
+                          </div>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="order-icon" width="16" height="16"
+                            class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path
+                              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                          </svg>
+                        </div>
+                      </a>
+                      <a href="#" class="order-link d-block">
+                        <div class="order-card d-flex justify-content-between align-items-center">
+                          <div class="order-details">
+                            <h5 class="order-number">
+                              ORD ID 87987988798
+                            </h5>
+                            <h5 class="order-time">
+                              Date & Time: Aug 2,2021 11:30 AM
+                            </h5>
+                          </div>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="order-icon" width="16" height="16"
+                            class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path
+                              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                          </svg>
+                        </div>
+                      </a>
+                      <a href="#" class="order-link d-block">
+                        <div class="order-card d-flex justify-content-between align-items-center">
+                          <div class="order-details">
+                            <h5 class="order-number">
+                              ORD ID 87987988798
+                            </h5>
+                            <h5 class="order-time">
+                              Date & Time: Aug 2,2021 11:30 AM
+                            </h5>
+                          </div>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="order-icon" width="16" height="16"
+                            class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path
+                              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                          </svg>
+                        </div>
+                      </a>
+                      <a href="#" class="order-link d-block">
+                        <div class="order-card d-flex justify-content-between align-items-center">
+                          <div class="order-details">
+                            <h5 class="order-number">
+                              ORD ID 87987988798
+                            </h5>
+                            <h5 class="order-time">
+                              Date & Time: Aug 2,2021 11:30 AM
+                            </h5>
+                          </div>
+                          <svg xmlns="http://www.w3.org/2000/svg" class="order-icon" width="16" height="16"
+                            class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path
+                              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                          </svg>
+                        </div>
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>  
+            </div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
               <div class="col-12">
-                <h1 class=" main-title ">
-                  Completed Orders <span class="main-title--light">(10 Orders)</span>
+                <h1 class=" main-title ">Appetizers<span class="main-title--light">(6 Items)</span>
                 </h1>
               </div>
-              <div class="order">
-                <div class="row">
-                  <div class="col-12">
-                    <a href="#" class="order-link d-block">
-                      <div class="order-card d-flex justify-content-between align-items-center">
-                        <div class="order-details">
-                          <h5 class="order-number">
-                            ORD ID 87987988798
-                          </h5>
-                          <h5 class="order-time">
-                            Date & Time: Aug 2,2021 11:30 AM
-                          </h5>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="order-icon" width="16" height="16"
-                          class="bi bi-chevron-right" viewBox="0 0 16 16">
-                          <path
-                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                        </svg>
-                      </div>
-                    </a>
-                    <a href="#" class="order-link d-block">
-                      <div class="order-card d-flex justify-content-between align-items-center">
-                        <div class="order-details">
-                          <h5 class="order-number">
-                            ORD ID 87987988798
-                          </h5>
-                          <h5 class="order-time">
-                            Date & Time: Aug 2,2021 11:30 AM
-                          </h5>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="order-icon" width="16" height="16"
-                          class="bi bi-chevron-right" viewBox="0 0 16 16">
-                          <path
-                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                        </svg>
-                      </div>
-                    </a>
-                    <a href="#" class="order-link d-block">
-                      <div class="order-card d-flex justify-content-between align-items-center">
-                        <div class="order-details">
-                          <h5 class="order-number">
-                            ORD ID 87987988798
-                          </h5>
-                          <h5 class="order-time">
-                            Date & Time: Aug 2,2021 11:30 AM
-                          </h5>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="order-icon" width="16" height="16"
-                          class="bi bi-chevron-right" viewBox="0 0 16 16">
-                          <path
-                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                        </svg>
-                      </div>
-                    </a>
-                    <a href="#" class="order-link d-block">
-                      <div class="order-card d-flex justify-content-between align-items-center">
-                        <div class="order-details">
-                          <h5 class="order-number">
-                            ORD ID 87987988798
-                          </h5>
-                          <h5 class="order-time">
-                            Date & Time: Aug 2,2021 11:30 AM
-                          </h5>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="order-icon" width="16" height="16"
-                          class="bi bi-chevron-right" viewBox="0 0 16 16">
-                          <path
-                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                        </svg>
-                      </div>
-                    </a>
-                    <a href="#" class="order-link d-block">
-                      <div class="order-card d-flex justify-content-between align-items-center">
-                        <div class="order-details">
-                          <h5 class="order-number">
-                            ORD ID 87987988798
-                          </h5>
-                          <h5 class="order-time">
-                            Date & Time: Aug 2,2021 11:30 AM
-                          </h5>
-                        </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="order-icon" width="16" height="16"
-                          class="bi bi-chevron-right" viewBox="0 0 16 16">
-                          <path
-                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-                        </svg>
-                      </div>
-                    </a>
-
-                  </div>
-                </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+              <div class="col-12">
+                <h1 class=" main-title ">Non-Vegetarian Entree <span class="main-title--light">(7 Items)</span>
+                </h1>
               </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-            Non-Vegetarian Entree
+        </div>
+      </section>
+
+      <!-- =========== right side 3 / order details ================  -->
+      <aside class="right custom-scroll">
+        <div class="item-card">
+          <p class="item-name mb-0">
+            <span>ORD ID 87987988798</span>
+          </p>
+          <p class="order-time mb-2">AUG 2, 2021 11:30 AM</p>
+          <div class="d-flex align-items-center ">
+            <p class="fw-500">Customer :</p>
+            <span class="fw-500">&nbsp; Customer :</span>
           </div>
         </div>
-      </div>
+
+        <div class="item-card">
+          <p class="d-flex justify-content-between item-name">
+            <span>Peach Cobbler</span>
+            <span>$27.00</span>
+          </p>
+          <div>
+            <div class="d-flex align-items-center">
+              <div class="active-circle"></div>
+              <p class="fw-500">Spice Level - </p>
+              <span class="fw-300"> &nbsp; Mild</span>
+            </div>
+            <div class="d-flex align-items-center ">
+              <div class="active-circle"></div>
+              <p class="fw-500">Meat Option - </p>
+              <span class="fw-300">&nbsp; Chicken ( $20.52 )</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-card">
+          <p class="d-flex justify-content-between item-name">
+            <span>Peach Cobbler</span>
+            <span>$27.00</span>
+          </p>
+          <div>
+            <div class="d-flex align-items-center">
+              <div class="active-circle"></div>
+              <p class="fw-500">Spice Level - </p>
+              <span class="fw-300"> &nbsp; Mild</span>
+            </div>
+            <div class="d-flex align-items-center ">
+              <div class="active-circle"></div>
+              <p class="fw-500">Meat Option - </p>
+              <span class="fw-300">&nbsp; Chicken ( $20.52 )</span>
+            </div>
+          </div>
+        </div>
+        <div class="item-card">
+          <p class="d-flex justify-content-between item-name mb-0">
+            <span>Subtotal</span>
+            <span>$81.00</span>
+          </p>
+        </div>
+
+
+        <div class="item-card">
+          <div class="mb-2">
+            <p class="d-flex justify-content-between">
+              <span class="fw-500 w-50">Reduced State tax</span>
+              <span class="fw-500">6.5%</span>
+              <span class="fw-500">$1.30</span>
+            </p>
+            <p class="d-flex justify-content-between">
+              <span class="fw-500 w-50">City Tax</span>
+              <span class="fw-500">1.5%</span>
+              <span class="fw-500">$1.30</span>
+            </p>
+          </div>
+          <p class="d-flex justify-content-between">
+            <span class="fw-900">Total Taxes</span>
+            <span class="fw-900">$1.30</span>
+          </p>
+        </div>
+        <div class="item-card">
+          <p class="d-flex justify-content-between mb-2">
+            <span class="fw-900">Total</span>
+            <span class="fw-900">$81.00</span>
+          </p>
+          <p class="d-flex justify-content-between">
+            <span class="fw-500">Cash Sale</span>
+            <span class="fw-500">$1.30</span>
+          </p>
+          <p class="d-flex justify-content-between">
+            <span class="fw-500">Cash Tendered</span>
+            <span class="fw-500">$1.30</span>
+          </p>
+          <p class="d-flex justify-content-between">
+            <span class="fw-500">Station: Demo Terminal</span>
+          </p>
+        </div>
+        <div class="item-card border-bottom-0">
+          <p class="d-flex justify-content-between mb-2">
+            <span class="fw-900">Payment</span>
+          </p>
+          <p class="d-flex justify-content-between">
+            <span class="fw-500">Credit Card</span>
+            <span class="fw-500">1548 5465 9878 XXXX</span>
+          </p>
+        </div>
+        <div class="item-card">
+          <button class="btn btn-orange btn-formaction btn-signup w-100 rounded-0">REORDER</button>
+        </div>
+      </aside>
     </section>
+  </main>
 
-    <!-- =========== right side 3 / order details ================  -->
-    <aside class="right custom-scroll">
-      <div class="item-card">
-        <p class="item-name mb-0">
-          <span>ORD ID 87987988798</span>
-        </p>
-        <p class="order-time mb-2">AUG 2, 2021 11:30 AM</p>
-        <div class="d-flex align-items-center ">
-          <p class="fw-500">Customer :</p>
-          <span class="fw-500">&nbsp; Customer :</span>
-        </div>
-      </div>
 
-       <div class="item-card">
-        <p class="d-flex justify-content-between item-name">
-          <span>Peach Cobbler</span>
-          <span>$27.00</span>
-        </p>
-        <div>
-          <div class="d-flex align-items-center">
-            <div class="active-circle"></div>
-            <p class="fw-500">Spice Level - </p>
-            <span class="fw-300"> &nbsp; Mild</span>
-          </div>
-          <div class="d-flex align-items-center ">
-            <div class="active-circle"></div>
-            <p class="fw-500">Meat Option - </p>
-            <span class="fw-300">&nbsp; Chicken ( $20.52 )</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="item-card">
-        <p class="d-flex justify-content-between item-name">
-          <span>Peach Cobbler</span>
-          <span>$27.00</span>
-        </p>
-        <div>
-          <div class="d-flex align-items-center">
-            <div class="active-circle"></div>
-            <p class="fw-500">Spice Level - </p>
-            <span class="fw-300"> &nbsp; Mild</span>
-          </div>
-          <div class="d-flex align-items-center ">
-            <div class="active-circle"></div>
-            <p class="fw-500">Meat Option - </p>
-            <span class="fw-300">&nbsp; Chicken ( $20.52 )</span>
-          </div>
-        </div>
-      </div>
-      <div class="item-card">
-        <p class="d-flex justify-content-between item-name mb-0">
-          <span>Subtotal</span>
-          <span>$81.00</span>
-        </p>
-      </div>
-
-  
-      <div class="item-card">
-        <div class="mb-2">
-          <p class="d-flex justify-content-between">
-            <span class="fw-500 w-50">Reduced State tax</span>
-            <span class="fw-500">6.5%</span>
-            <span class="fw-500">$1.30</span>
-          </p>
-          <p class="d-flex justify-content-between">
-            <span class="fw-500 w-50">City Tax</span>
-            <span class="fw-500">1.5%</span>
-            <span class="fw-500">$1.30</span>
-          </p>
-        </div>
-        <p class="d-flex justify-content-between">
-          <span class="fw-900">Total Taxes</span>
-          <span class="fw-900">$1.30</span>
-        </p>
-      </div>
-      <div class="item-card">
-        <p class="d-flex justify-content-between mb-2">
-          <span class="fw-900">Total</span>
-          <span class="fw-900">$81.00</span>
-        </p>
-        <p class="d-flex justify-content-between">
-          <span class="fw-500">Cash Sale</span>
-          <span class="fw-500">$1.30</span>
-        </p>
-        <p class="d-flex justify-content-between">
-          <span class="fw-500">Cash Tendered</span>
-          <span class="fw-500">$1.30</span>
-        </p>
-        <p class="d-flex justify-content-between">
-          <span class="fw-500">Station: Demo Terminal</span>
-        </p>
-      </div>
-      <div class="item-card border-bottom-0">
-        <p class="d-flex justify-content-between mb-2">
-          <span class="fw-900">Payment</span>
-        </p>
-        <p class="d-flex justify-content-between">
-          <span class="fw-500">Credit Card</span>
-          <span class="fw-500">1548 5465 9878 XXXX</span>
-        </p>
-      </div>
-      <div class="item-card">
-        <button class="btn btn-orange btn-formaction btn-signup w-100 rounded-0">REORDER</button>
-      </div>
-    </aside>
-  </section>
 
 
   <!-- Bootstrap Js -->
